@@ -46,7 +46,7 @@ export const config: TConfig = {
   },
   hero: {
     name: "Flavius Petrasciuc",
-    p: ["Information Technology student,", "aspiring full-stack developer and software engineer."],
+    p: ["Information Technology student at NHL Stenden,", "aspiring full-stack developer and software engineer.", "Currently looking for an internship."],
   },
   contact: {
     p: "Get in touch - Let's build something together",

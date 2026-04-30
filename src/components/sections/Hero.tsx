@@ -23,7 +23,8 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
             {config.hero.p[0]} <br className="hidden sm:block" />
-            {config.hero.p[1]}
+            {config.hero.p[1]} <br className="hidden sm:block" /> <br className="hidden sm:block" />
+            {config.hero.p[2]}
           </p>
           <div className="flex gap-4">
             <button
