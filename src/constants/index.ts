@@ -7,11 +7,12 @@ import type {
   TProject,
 } from "../types";
 
+
 import {
-  mobile,
-  backend,
-  creator,
-  web,
+  code,
+  server,
+  thumb,
+  paintbrush,
   javascript,
   typescript,
   html,
@@ -44,7 +45,7 @@ export const navLinks: TNavLink[] = [
     title: "Work",
   },
   {
-    id: "#skills",
+    id: "skills",
     title: "Skills"
   },
   {
@@ -55,21 +56,25 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Frontend Development",
+    description: "HTML5, CSS, React, JavaScript",
+    icon: code,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Backend Development",
+    description: "PHP, TypeScript, NestJS, Java",
+    icon: server,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Software Quality",
+    description: "Clean Code Principles, Software Design Patterns",
+    icon: thumb,
   },
   {
-    title: "Content Creator",
-    icon: creator,
-  },
+    title: "UI/UX Design",
+    description: "Figma, Wireframing",
+    icon: paintbrush,
+  }
 ];
 
 const technologies: TTechnology[] = [

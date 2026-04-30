@@ -2,6 +2,7 @@ export type TCommonProps = {
   title?: string;
   name?: string;
   icon?: string;
+  description?: string;
 };
 
 export type TExperience = {
@@ -9,7 +10,7 @@ export type TExperience = {
   iconBg: string;
   date: string;
   points: string[];
-} & Required<Omit<TCommonProps, "name">>;
+} & Omit<TCommonProps, "name">;
 
 export type TTestimonial = {
   testimonial: string;
@@ -28,7 +29,7 @@ export type TProject = {
   sourceCodeLink: string;
 } & Required<Pick<TCommonProps, "name">>;
 
-export type TTechnology = Required<Omit<TCommonProps, "title">>;
+export type TTechnology = Omit<TCommonProps, "title">;
 
 export type TNavLink = {
   id: string;

@@ -49,7 +49,7 @@ export const config: TConfig = {
     p: ["Information Technology student,", "aspiring full-stack developer and software engineer."],
   },
   contact: {
-    p: "Get in touch",
+    p: "Get in touch - Let's build something together",
     h2: "Contact information.",
     info: {
       email: {
@@ -69,7 +69,7 @@ export const config: TConfig = {
   sections: {
     about: {
       p: "Introduction",
-      h2: "Overview.",
+      h2: "About me.",
       content: `I'm a skilled software developer with experience in TypeScript and
       JavaScript, and expertise in frameworks like React, Node.js, and
       Three.js. I'm a quick learner and collaborate closely with clients to
