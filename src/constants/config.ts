@@ -15,16 +15,16 @@ type TConfig = {
     p: string[];
   };
   contact: {
-    form: {
-      name: {
-        span: string;
-        placeholder: string;
-      };
+    info: {
       email: {
         span: string;
         placeholder: string;
       };
-      message: {
+      phone: {
+        span: string;
+        placeholder: string;
+      };
+      location: {
         span: string;
         placeholder: string;
       };
@@ -50,16 +50,19 @@ export const config: TConfig = {
   },
   contact: {
     p: "Get in touch",
-    h2: "Contact.",
-    form: {
-      name: {
-        span: "Your Name",
-        placeholder: "What's your name?",
+    h2: "Contact information.",
+    info: {
+      email: {
+        span: "Email",
+        placeholder: "flavius.petrasciuc5@gmail.com",
       },
-      email: { span: "Your Email", placeholder: "What's your email?" },
-      message: {
-        span: "Your Message",
-        placeholder: "What do you want to say?",
+      phone: {
+        span: "Phone",
+        placeholder: "+31 6 47083179",
+      },
+      location: {
+        span: "Location",
+        placeholder: "Emmen, Netherlands",
       },
     },
   },

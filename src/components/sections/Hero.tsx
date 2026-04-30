@@ -33,7 +33,7 @@ const Hero = () => {
                 link.download = 'CV.pdf';
                 link.click();
               }}
-              className="rounded-full px-4 py-2 hover:border-2 bg-white/20 backdrop-blur-sm mt-4 text-sm sm:text-base hover:border-[#915EFF]">
+              className="rounded-full px-4 py-3 hover:border-2 bg-white/20 backdrop-blur-sm mt-4 text-sm sm:text-base hover:border-[#915EFF]">
               Download My CV
             </button>
             <button className="rounded-full px-4 py-2 hover:border-2 bg-white/20 backdrop-blur-sm mt-4 text-sm sm:text-base hover:border-[#915EFF]">
