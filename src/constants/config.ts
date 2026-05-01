@@ -70,15 +70,15 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "About me.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm Flavius, a second year Information Technology student at NHL Stenden University of Applied Sciences.
+      I have been passionate about technology for the last couple of years and decided to pursue a career in this field. 
+      I enjoy combining creative aspects with technology, and strive for high quality. I am in search of 
+      new opportunities to grow and develop.
+      Let's work together!`,
     },
     experience: {
-      p: "What I have done so far",
-      h2: "Work Experience.",
+      p: "Where it all started",
+      h2: "My Learning Journey.",
     },
     feedbacks: {
       p: "What others say",
@@ -87,11 +87,9 @@ export const config: TConfig = {
     works: {
       p: "My work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `Over the last two years at NHL Stenden, I have worked on numerous IT projects
+      with real clients and companies, creating meaningful software solutions while gaining new 
+      technical knowledge and experience. Check out my projects down below.`,
     },
   },
 };
