@@ -21,17 +21,20 @@ import {
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
   docker,
+  php,
+  java,
+  lua,
+  nestjs,
+  sql,
+  github,
+  arduino,
+  jira,
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -40,12 +43,12 @@ export const navLinks: TNavLink[] = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
-  },
-  {
     id: "skills",
     title: "Skills"
+  },
+  {
+    id: "work",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -94,40 +97,52 @@ const technologies: TTechnology[] = [
     icon: typescript,
   },
   {
+    name: "PHP",
+    icon: php,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Lua",
+    icon: lua,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "NestJS",
+    icon: nestjs,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
+  },
+  {
+    name: "GitHub",
+    icon: github,
+  },
+  {
+    name: "Arduino",
+    icon: arduino,
+  },
+  {
+    name: "Jira - Scrum",
+    icon: jira,
   },
 ];
 

@@ -1,7 +1,5 @@
 // @ts-nocheck
 import {
-  EarthCanvas,
-  BallCanvas,
   StarsCanvas,
 } from "./canvas";
 import Hero from "./sections/Hero";
