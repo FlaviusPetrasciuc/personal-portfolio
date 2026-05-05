@@ -30,20 +30,20 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, description, icon }
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="shadow-card rounded-[20px] p-[1px] h-full border border-[#915EFF]"
     >
-      <div className="bg-tertiary flex flex-col items-center text-center rounded-[20px] p-6 sm:p-6 h-full aspect-square">
-        <div className="flex-shrink-0 mb-4">
+      <div className="bg-tertiary flex flex-col items-center text-center rounded-[20px] p-3 sm:p-6 h-[150px] sm:h-[220px]">
+        <div className="flex-shrink-0 mb-2 sm:mb-4">
           <img
             src={icon}
             alt={title}
-            className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
+            className="h-8 w-8 sm:h-12 sm:w-12 object-contain"
           />
         </div>
 
         <div className="flex-1 flex flex-col justify-center">
-          <h3 className="text-center text-base sm:text-lg md:text-xl font-bold text-white mb-2">
+          <h3 className="text-center text-xs sm:text-base md:text-xl font-bold text-white mb-1 sm:mb-2 break-words">
             {title}
           </h3>
-          <p className="text-center text-xs sm:text-sm text-gray-300 leading-relaxed">
+          <p className="text-center text-[10px] sm:text-sm text-gray-300 leading-relaxed break-words line-clamp-2 sm:line-clamp-3">
             {description}
           </p>
         </div>
@@ -70,7 +70,7 @@ const About = () => {
             My Expertise.
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-2xl mt-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-3 sm:gap-6 mt-5">
             {services.map((service, index) => (
               <ServiceCard key={service.title} index={index} {...service} />
             ))}
@@ -87,11 +87,11 @@ const About = () => {
               alt="Profile"
               className="w-full h-auto rounded-2xl object-cover shadow-xl"
             />
-            
+
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#915EFF]/20 to-transparent pointer-events-none" />
           </motion.div>
         </div>
-        
+
       </div>
     </section>
   );
