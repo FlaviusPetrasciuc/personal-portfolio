@@ -31,6 +31,9 @@ import nhlstendenexplorer from "./works/nhlstenden-explorer.webp";
 import smarttimeregistration from "./works/smarttimeregistration.png";
 import tripguide from "./tripguide.png";
 
+import previousarrow from "./previous-arrow.svg";
+import nextarrow from "./next-arrow.svg";
+
 export {
   server,
   code,
@@ -57,6 +60,8 @@ export {
   sql,
   arduino,
   jira,
+  previousarrow,
+  nextarrow,
   nhlstendenexplorer,
   smarttimeregistration,
   tripguide,

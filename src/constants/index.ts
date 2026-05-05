@@ -205,27 +205,24 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "You are a very hardworking, organized, and determined person. You are openminded, always support new ideas, and ready to help implement them. You ask questions when you do not understand something and are willing to learn more and explore new horizons. You are a friendly person who helps maintain a positive atmosphere within the team, and if any problems arise between team members, you are ready to help and find solutions. You are well organized and always do your best to finish tasks on time, which shows that you are a responsible team member. We can trust you to deliver high-quality work on time.",
+    name: "Victoria Iașcevschi",
+    designation: "Student",
+    company: "NHL Stenden",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "You're definitely a competent and inspiring team leader that navigates the challenging landscape of group dynamics quite adeptly. So far, you've managed to show empathy and understanding toward all of us and struck a balance between group members tactfully. Additionally, your willingness to perform the necessary tasks for the project aided us all in having a smooth flow through the process of project completion. I am hoping to see you strive for your goals in a similarly committed manner in the future and looking forward to collaborating with you again.",
+    name: "Volkan Yildirim",
+    designation: "Student",
+    company: "NHL Stenden",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Throughout the second period I have noticed that you like taking the role of the leader. Whenever we work on the project you are the main point of focus in terms of deciding what should be done that day and in what order. You also do not just take care of leading our work, but you add a lot to the project yourself. Thanks to the organisation of work you provide, it reduces stress while working and gives me the sense of going in a right direction. This not only improves my mood, but also helps our entire group go forward with work accordingly to the schedule. I think if you keep it up you will make any team you are in move forward without major internal obstacles.",
+    name: "Stefan Bryda",
+    designation: "Student",
+    company: "NHL Stenden",
   },
 ];
 

@@ -6,6 +6,8 @@ import { Header } from "../atoms/Header";
 import { TTestimonial } from "../../types";
 import { config } from "../../constants/config";
 
+import { previousarrow, nextarrow } from "../../assets";
+
 import { useState } from "react";
 
 const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
@@ -15,11 +17,11 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
   company,
   image,
 }) => (
-  <div className="bg-black-200 w-full max-w-md mx-auto rounded-3xl p-8 md:p-10">
-    <p className="text-[48px] font-black text-white">"</p>
+  <div className="bg-black-200 w-full max-w-md mx-auto rounded-3xl p-8 md:p-8">
+    <p className="text-[38px] font-black text-white">"</p>
 
     <div className="mt-1">
-      <p className="text-[16px] md:text-[18px] tracking-wider text-white leading-relaxed">
+      <p className="text-[16px] md:text-[14px] tracking-wider text-white leading-relaxed">
         {testimonial}
       </p>
 
@@ -29,15 +31,9 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
             <span className="blue-text-gradient">@</span> {name}
           </p>
           <p className="text-secondary mt-1 text-[10px] md:text-[12px]">
-            {designation} of {company}
+            {designation} at {company}
           </p>
         </div>
-
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className="h-10 w-10 rounded-full object-cover"
-        />
       </div>
     </div>
   </div>
@@ -73,7 +69,7 @@ const Feedbacks = () => {
   return (
     <div className="bg-black-100 rounded-[20px]">
 
-      <div className={`${styles.padding} bg-tertiary min-h-[300px] rounded-2xl`}>
+      <div className={`${styles.padding} bg-tertiary min-h-[100px] rounded-2xl`}>
         <Header useMotion={true} {...config.sections.feedbacks} />
       </div>
 
@@ -97,10 +93,7 @@ const Feedbacks = () => {
               onClick={goToPrevious}
               className="w-10 h-10 rounded-full border-[#915EFF] flex items-center justify-center hover:bg-[#915EFF] hover:text-white transition duration-300 cursor-pointer"
             >
-              {/* TURN INTO OBJECT */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="m15 18-6-6 6-6"></path>
-              </svg>
+              <img src={previousarrow} alt="Previous" />
             </button>
             
             <div className="flex gap-2">
@@ -121,10 +114,7 @@ const Feedbacks = () => {
               onClick={goToNext}
               className="w-10 h-10 rounded-full border-[#915EFF] flex items-center justify-center hover:bg-[#915EFF] hover:text-white transition duration-300 cursor-pointer"
             >
-              {/* TURN INTO OBJECTS */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="m9 18 6-6-6-6"></path>
-              </svg>
+              <img src={nextarrow} alt="Next" />
             </button>
           </div>
         </div>
