@@ -1,35 +1,34 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../../constants/styles";
-import { fadeIn } from "../../utils/motion";
 import { testimonials } from "../../constants";
 import { Header } from "../atoms/Header";
 import { TTestimonial } from "../../types";
 import { config } from "../../constants/config";
 
+import { useState } from "react";
+
 const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
-  index,
   testimonial,
   name,
   designation,
   company,
   image,
 }) => (
-  <motion.div
-    variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 xs:w-[320px] w-full rounded-3xl p-10"
-  >
+  <div className="bg-black-200 w-full max-w-md mx-auto rounded-3xl p-8 md:p-10">
     <p className="text-[48px] font-black text-white">"</p>
 
     <div className="mt-1">
-      <p className="text-[18px] tracking-wider text-white">{testimonial}</p>
+      <p className="text-[16px] md:text-[18px] tracking-wider text-white leading-relaxed">
+        {testimonial}
+      </p>
 
       <div className="mt-7 flex items-center justify-between gap-1">
         <div className="flex flex-1 flex-col">
-          <p className="text-[16px] font-medium text-white">
+          <p className="text-[14px] md:text-[16px] font-medium text-white">
             <span className="blue-text-gradient">@</span> {name}
           </p>
-          <p className="text-secondary mt-1 text-[12px]">
+          <p className="text-secondary mt-1 text-[10px] md:text-[12px]">
             {designation} of {company}
           </p>
         </div>
@@ -41,23 +40,94 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
         />
       </div>
     </div>
-  </motion.div>
+  </div>
 );
 
 const Feedbacks = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const totalSlides = testimonials.length;
+
+  const goToPrevious = () => {
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setCurrentIndex((prev) => (prev === 0 ? totalSlides - 1 : prev - 1));
+    setTimeout(() => setIsAnimating(false), 500);
+  };
+
+  const goToNext = () => {
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setCurrentIndex((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
+    setTimeout(() => setIsAnimating(false), 500);
+  };
+
+  const goToSlide = (index: number) => {
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setCurrentIndex(index);
+    setTimeout(() => setIsAnimating(false), 500);
+  };
+
   return (
-    <div className="bg-black-100 mt-12 rounded-[20px]">
-      <div
-        className={`${styles.padding} bg-tertiary min-h-[300px] rounded-2xl`}
-      >
+    <div className="bg-black-100 rounded-[20px]">
+
+      <div className={`${styles.padding} bg-tertiary min-h-[300px] rounded-2xl`}>
         <Header useMotion={true} {...config.sections.feedbacks} />
       </div>
-      <div
-        className={`${styles.paddingX} -mt-20 flex flex-wrap gap-7 pb-14 max-sm:justify-center`}
-      >
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
+
+      <div className="w-full py-12 pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex justify-center items-center">
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.4 }}
+              className="w-full flex justify-center"
+            >
+              <FeedbackCard index={currentIndex} {...testimonials[currentIndex]} />
+            </motion.div>
+          </div>
+
+          <div className="flex justify-center items-center gap-6 mt-8">
+            <button
+              onClick={goToPrevious}
+              className="w-10 h-10 rounded-full border-[#915EFF] flex items-center justify-center hover:bg-[#915EFF] hover:text-white transition duration-300 cursor-pointer"
+            >
+              {/* TURN INTO OBJECT */}
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m15 18-6-6 6-6"></path>
+              </svg>
+            </button>
+            
+            <div className="flex gap-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-2 h-2 rounded-full transition duration-300 ${
+                    currentIndex === index
+                      ? "bg-[#915EFF] w-4"
+                      : "bg-gray-500 hover:bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
+            
+            <button
+              onClick={goToNext}
+              className="w-10 h-10 rounded-full border-[#915EFF] flex items-center justify-center hover:bg-[#915EFF] hover:text-white transition duration-300 cursor-pointer"
+            >
+              {/* TURN INTO OBJECTS */}
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

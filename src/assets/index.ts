@@ -27,8 +27,8 @@ import roblox from "./company/roblox.png";
 import nhlstenden from "./company/nhlstenden.png";
 import explore from "./company/explore.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import nhlstendenexplorer from "./works/nhlstenden-explorer.webp";
+import smarttimeregistration from "./works/smarttimeregistration.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -57,7 +57,7 @@ export {
   sql,
   arduino,
   jira,
-  carrent,
-  jobit,
+  nhlstendenexplorer,
+  smarttimeregistration,
   tripguide,
 };

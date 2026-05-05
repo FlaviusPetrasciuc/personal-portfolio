@@ -32,8 +32,8 @@ import {
   github,
   arduino,
   jira,
-  carrent,
-  jobit,
+  nhlstendenexplorer,
+  smarttimeregistration,
   tripguide,
 } from "../assets";
 
@@ -231,68 +231,112 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "NHL Stenden Explorer",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This project entailed the development of a web application which allows students, visitors and staff at NHL Stenden to explore the Emmen campus and learn about the facilities provided at the location in an accessible way. It includes interactive elements and features such as 360-degree images and a virtual guide.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "CSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "PostgreSQL",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "yellow-text-gradient",
+      }
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    image: nhlstendenexplorer,
+    sourceCodeLink: "https://github.com/KyanJeuring/NHLStendenExplorer",
   },
   {
-    name: "Job IT",
+    name: "Smart Time Registration",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This project required the development of a web application which allows employees from within a company to automate their hour logging process. The application features a registration and login system, the ability to manage projects and to import one's Outlook agenda which the system then reads to automatically log hours spent on different tasks.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "CSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "NestJS",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "pink-text-gradient",
+      }
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
+    image: smarttimeregistration,
+    sourceCodeLink: "https://github.com/oomfrikkie/SmartTimeRegistration",
   },
   {
-    name: "Trip Guide",
+    name: "Silent Storytellers",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Part of the Maatscappelijke Diensttijd (MDT) project, this project aims to raise awareness about the struggles deaf individuals face in their daily lives through the creation of a website which allows them to submit their stories.",
     tags: [
       {
-        name: "nextjs",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "PHP",
+        color: "orange-text-gradient",
       },
+      {
+        name: "Docker",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Responsive Design",
+        color: "pink-text-gradient",
+      }
     ],
     image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/KyanJeuring/Deafinity/tree/Website",
   },
+  {
+    name: "SSM Product Passport and Tracking",
+    description: "This project is about helping a simulated factory system to comply with new EU regulations on product passports. This was done by establishing a connection between the factory and a centralized source of truth, composed of two integrated databases.",
+    tags: [
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GraphQL",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: tripguide,
+    sourceCodeLink: "https://github.com/KyanJeuring/SSMProductPassportAndTracking",
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
