@@ -166,10 +166,10 @@ const experiences: TExperience[] = [
     iconBg: "#E6DEDD",
     date: "January 2022 - August 2024",
     points: [
-      "Exploring new technologies and learning web-development (HTML, CSS, JavaScript)",
-      "Experimenting with Python and solving problems.",
+      "Exploring new technologies and learning the basics of web-development (HTML, CSS, JavaScript)",
+      "Experimenting with Python.",
       "Deep-diving into computer science concepts and researching how computers actually work.",
-      "Realizing I would like to pursue a career in IT.",
+      "Deciding I would like to pursue a career in IT.",
     ],
   },
   {
@@ -185,7 +185,7 @@ const experiences: TExperience[] = [
       "Learning about servers, computer networks, virtual machines and basic security practices.",
       "Learning about Object Oriented Programming in Java and how to build UML class diagrams.",
       "Learning how to work with Arduino and programming my first robot, capable of picking up objects, following a track and avoiding obstacles.",
-      "Taking part in the national Dutch Maatschappelijke Diensttijd Project, using technology to raise public awareness about people with hearing problems."
+      "Participating in the national Dutch Maatschappelijke Diensttijd Project, using technology to raise public awareness about people with hearing difficulties."
     ],
   },
   {

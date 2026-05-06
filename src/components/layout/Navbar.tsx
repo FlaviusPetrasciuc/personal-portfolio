@@ -84,7 +84,7 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="h-[28px] w-[28px] object-contain"
+            className="h-[28px] w-[28px] object-contain cursor-pointer z-20"
             onClick={() => setToggle(!toggle)}
           />
 
@@ -92,7 +92,8 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: toggle ? 1 : 0, y: toggle ? 0 : -20 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className={`absolute left-0 right-0 top-full z-10 bg-gray-900/95 backdrop-blur-sm shadow-lg overflow-hidden`}
+            className={`absolute left-0 right-0 top-full z-10 bg-gray-900/95 backdrop-blur-sm shadow-lg overflow-hidden ${toggle ? "pointer-events-auto" : "pointer-events-none"
+              }`}
           >
             <ul className="flex flex-col items-center gap-4 py-6 px-4 w-full">
               {navLinks.map((nav) => (
