@@ -15,7 +15,6 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
   name,
   designation,
   company,
-  image,
 }) => (
   <div className="bg-black-200 w-full max-w-md mx-auto rounded-3xl p-8 md:p-8">
     <p className="text-[38px] font-black text-white">"</p>

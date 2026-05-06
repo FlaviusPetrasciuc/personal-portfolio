@@ -34,7 +34,8 @@ import {
   jira,
   nhlstendenexplorer,
   smarttimeregistration,
-  tripguide,
+  siletstorytellers,
+  jabberpoint
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -255,7 +256,7 @@ const projects: TProject[] = [
   {
     name: "Smart Time Registration",
     description:
-      "This project required the development of a web application which allows employees from within a company to automate their hour logging process. The application features a registration and login system, the ability to manage projects and to import one's Outlook agenda which the system then reads to automatically log hours spent on different tasks.",
+      "This project consists of the development of a web application which allows employees from within a company to automate their hour logging process. The application features a registration and login system, the ability to manage projects and to import one's Outlook agenda which the system then reads to automatically log hours spent on different tasks.",
     tags: [
       {
         name: "React",
@@ -288,7 +289,7 @@ const projects: TProject[] = [
   {
     name: "Silent Storytellers",
     description:
-      "Part of the Maatscappelijke Diensttijd (MDT) project, this project aims to raise awareness about the struggles deaf individuals face in their daily lives through the creation of a website which allows them to submit their stories.",
+      "Part of the Maatscappelijke Diensttijd (MDT) project, this project aims to raise awareness about the struggles deaf individuals face in their daily lives through the creation of a website which allows persons with hearing disabilities to submit their personal stories.",
     tags: [
       {
         name: "HTML",
@@ -311,28 +312,32 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       }
     ],
-    image: tripguide,
+    image: siletstorytellers,
     sourceCodeLink: "https://github.com/KyanJeuring/Deafinity/tree/Website",
   },
   {
-    name: "SSM Product Passport and Tracking",
-    description: "This project is about helping a simulated factory system to comply with new EU regulations on product passports. This was done by establishing a connection between the factory and a centralized source of truth, composed of two integrated databases.",
+    name: "Jabberpoint",
+    description: "This assignment focused on redesigning and reprogramming a poorly-written presentation software by applying \"Gang of 4\" design patterns, as well as fixing other errors within the software and therefore making it more efficient and properly functional. It also features a CI/CD pipeline.",
     tags: [
       {
-        name: "Python",
+        name: "Java",
         color: "green-text-gradient",
       },
       {
-        name: "GraphQL",
+        name: "Design Patterns",
         color: "pink-text-gradient",
       },
       {
-        name: "Docker",
+        name: "UML Diagrams",
         color: "blue-text-gradient",
+      },
+      {
+        name: "CI/CD pipeline",
+        color: "yellow-text-gradient",
       }
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/KyanJeuring/SSMProductPassportAndTracking",
+    image: jabberpoint,
+    sourceCodeLink: "https://github.com/VictoriaIascevschi/Jabberpoint-New-Version",
   }
 ];
 

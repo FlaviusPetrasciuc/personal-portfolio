@@ -29,7 +29,8 @@ import explore from "./company/explore.png";
 
 import nhlstendenexplorer from "./works/nhlstenden-explorer.webp";
 import smarttimeregistration from "./works/smarttimeregistration.png";
-import tripguide from "./tripguide.png";
+import siletstorytellers from "./works/silent-storytellers.jpeg";
+import jabberpoint from "./works/jabberpoint.webp";
 
 import previousarrow from "./previous-arrow.svg";
 import nextarrow from "./next-arrow.svg";
@@ -64,5 +65,6 @@ export {
   nextarrow,
   nhlstendenexplorer,
   smarttimeregistration,
-  tripguide,
+  siletstorytellers,
+  jabberpoint,
 };

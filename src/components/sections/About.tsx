@@ -8,7 +8,7 @@ import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 
-import picture from "../../assets/me.jpg";
+import picture from "../../assets/me.jpeg";
 
 interface IServiceCard {
   index: number;
@@ -21,8 +21,8 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, description, icon }
   <Tilt
     glareEnable
     tiltEnable
-    tiltMaxAngleX={10}
-    tiltMaxAngleY={10}
+    tiltMaxAngleX={20}
+    tiltMaxAngleY={20}
     glareColor="#aaa6c3"
     className="h-full"
   >
@@ -87,11 +87,16 @@ const About = () => {
               alt="Profile"
               className="w-full h-auto rounded-2xl object-cover shadow-xl"
             />
-
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#915EFF]/20 to-transparent pointer-events-none" />
+            
+            <div className="rounded-2xl p-6 border border-[#915EFF] bg-tertiary mt-20">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
+                <span className="font-medium">Available for Work</span>
+              </div>
+              <p className="text-muted-foreground text-sm">I'm currently seeking an internship from September 2026 until January 2027. If you're interested in working together, contact me!</p>
+            </div>
           </motion.div>
         </div>
-
       </div>
     </section>
   );

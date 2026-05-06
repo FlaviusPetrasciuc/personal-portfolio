@@ -73,7 +73,7 @@ export const config: TConfig = {
       h2: "About me.",
       content: `I'm Flavius, a second year Information Technology student at NHL Stenden University of Applied Sciences.
       I have been passionate about technology for the last couple of years and decided to pursue a career in this field. 
-      I enjoy combining creative aspects with technology, and strive for high quality. I am in search of 
+      I enjoy combining creative aspects with technology, and strive for high quality. I am currently in search of 
       new opportunities to grow and develop.
       Let's work together!`,
     },

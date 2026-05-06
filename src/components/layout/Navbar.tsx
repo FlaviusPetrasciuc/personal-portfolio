@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import { styles } from "../../constants/styles";
@@ -50,11 +51,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } fixed top-0 z-20 flex w-full items-center py-5 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
+      className={`${styles.paddingX
+        } fixed top-0 z-20 flex w-full items-center py-5 ${scrolled ? "bg-primary" : "bg-transparent"
+        }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
         <Link
@@ -73,9 +72,8 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
-                active === nav.id ? "text-white" : "text-secondary"
-              } cursor-pointer text-[18px] font-medium hover:text-white`}
+              className={`${active === nav.id ? "text-white" : "text-secondary"
+                } cursor-pointer text-[18px] font-medium hover:text-white`}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
@@ -90,18 +88,18 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
 
-          <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } black-gradient absolute right-0 top-20 z-10 mx-4 my-2 min-w-[140px] rounded-xl p-6`}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: toggle ? 1 : 0, y: toggle ? 0 : -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className={`absolute left-0 right-0 top-full z-10 bg-gray-900/95 backdrop-blur-sm shadow-lg overflow-hidden`}
           >
-            <ul className="flex flex-1 list-none flex-col items-start justify-end gap-4">
+            <ul className="flex flex-col items-center gap-4 py-6 px-4 w-full">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins cursor-pointer text-[16px] font-medium ${
-                    active === nav.id ? "text-white" : "text-secondary"
-                  }`}
+                  className={`font-poppins cursor-pointer text-[16px] font-medium w-full text-center ${active === nav.id ? "text-[#915EFF]" : "text-white"
+                    } hover:text-[#915EFF] transition duration-300`}
                   onClick={() => {
                     setToggle(!toggle);
                   }}
@@ -110,7 +108,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </nav>
