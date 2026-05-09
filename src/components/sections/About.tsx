@@ -43,7 +43,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, description, icon }
           <h3 className="text-center text-xs sm:text-base md:text-xl font-bold text-white mb-1 sm:mb-2 break-words">
             {title}
           </h3>
-          <p className="text-center text-[10px] sm:text-sm text-gray-300 leading-relaxed break-words line-clamp-2 sm:line-clamp-3">
+          <p className="text-center text-[10px] sm:text-sm text-gray-300 leading-relaxed break-words">
             {description}
           </p>
         </div>

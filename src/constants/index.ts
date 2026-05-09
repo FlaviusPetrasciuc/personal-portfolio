@@ -185,7 +185,7 @@ const experiences: TExperience[] = [
       "Learning about servers, computer networks, virtual machines and basic security practices.",
       "Learning about Object Oriented Programming in Java and how to build UML class diagrams.",
       "Learning how to work with Arduino and programming my first robot, capable of picking up objects, following a track and avoiding obstacles.",
-      "Participating in the national Dutch Maatschappelijke Diensttijd Project, using technology to raise public awareness about people with hearing difficulties."
+      "Participating in the national Dutch \"Maatschappelijke Diensttijd\" Project, using technology to raise public awareness about people with hearing difficulties."
     ],
   },
   {
@@ -196,7 +196,7 @@ const experiences: TExperience[] = [
     date: "September 2025 - Present",
     points: [
       "Deep-diving into Object Oriented Programming in Java, learning about complex concepts like inheritance, polymorphism, interfaces, and how to design complex software through different kinds of UML diagrams.",
-      "Pursuing my first study abroad project in Braga, Portugal through the RUN-EU program in the AI for MedTech project, learning about the role of AI in medical care and how to 3D-model and print prosthetics.",
+      "Pursuing my first study abroad project in Braga, Portugal through the RUN-EU program in the \"AI for MedTech\" project, learning about the role of AI in medical care and how to 3D-model and print prosthetics.",
       "Working with different student groups on our first real-world projects with real clients, developing web applications using modern tools such as React, NextJS, TypeScript etc.",
       "Learning how to redesign poor-quality software by applying design patterns and debugging.",
     ],
