@@ -94,7 +94,7 @@ export const config: TConfig = {
       h2: "Projects.",
       content: `Over the last two years at NHL Stenden, I have worked on numerous IT projects
       with real clients and companies, creating meaningful software solutions while gaining new 
-      technical knowledge and experience. Check out my projects down below.`,
+      technical knowledge and experience. Check out some my projects down below.`,
     },
   },
 };

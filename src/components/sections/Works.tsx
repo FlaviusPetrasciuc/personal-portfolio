@@ -19,7 +19,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="w-full">
       <div className="bg-tertiary rounded-2xl h-full flex flex-col border border-[#915EFF]/20 hover:border-[#915EFF] transition duration-300 overflow-hidden">
-        
+
         <div className="relative h-[200px] sm:h-[220px] w-full overflow-hidden">
           <img
             src={image}
@@ -59,6 +59,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               </button>
             ))}
           </div>
+
         </div>
       </div>
     </motion.div>
@@ -86,6 +87,16 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+
+      <a
+        href="https://github.com/FlaviusPetrasciuc"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-2xl px-4 py-3 hover:border-2 bg-tertiary border border-[#915EFF]/20 hover:border-[#915EFF] transition duration-300 mt-10 mx-auto flex items-center justify-center gap-2 w-fit"
+      >
+        View All Projects
+        <img src={github} alt="github logo" className="w-5 h-5 object-contain" />
+      </a>
     </>
   );
 };

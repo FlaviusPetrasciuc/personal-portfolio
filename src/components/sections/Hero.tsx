@@ -18,7 +18,7 @@ const Hero = () => {
         setShowScrollIndicator(true);
       }
     };
-  
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -53,8 +53,13 @@ const Hero = () => {
               className="rounded-full px-4 py-3 hover:border-2 bg-white/20 backdrop-blur-sm mt-4 text-sm sm:text-base hover:border-[#915EFF]">
               Download My CV
             </button>
-            <button className="rounded-full px-4 py-2 hover:border-2 bg-white/20 backdrop-blur-sm mt-4 text-sm sm:text-base hover:border-[#915EFF]">
-              <a href={`#contact`}>Contact Me</a>
+            <button
+              onClick={() => {
+                document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="rounded-full px-4 py-2 hover:border-2 bg-white/20 backdrop-blur-sm mt-4 text-sm sm:text-base hover:border-[#915EFF] inline-flex items-center justify-center w-fit"
+            >
+              Contact Me
             </button>
           </div>
           <div className="flex gap-4">
@@ -75,25 +80,25 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       {showScrollIndicator && (
         <div className="fixed bottom-20 left-0 right-0 flex w-full items-center justify-center z-20">
-        <a href="#about">
-          <div className="border-secondary flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 p-2">
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="bg-secondary mb-1 h-3 w-3 rounded-full"
-            />
-          </div>
-        </a>
-      </div>
+          <a href="#about">
+            <div className="border-secondary flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 p-2">
+              <motion.div
+                animate={{
+                  y: [0, 24, 0],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+                className="bg-secondary mb-1 h-3 w-3 rounded-full"
+              />
+            </div>
+          </a>
+        </div>
       )}
     </section>
   );

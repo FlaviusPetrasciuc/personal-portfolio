@@ -317,7 +317,7 @@ const projects: TProject[] = [
   },
   {
     name: "Jabberpoint",
-    description: "This assignment focused on redesigning and reprogramming a poorly-written presentation software by applying \"Gang of 4\" design patterns, as well as fixing other errors within the software and therefore making it more efficient and properly functional. It also features a CI/CD pipeline.",
+    description: "This assignment focused on redesigning and reprogramming a poorly-written presentation software by applying \"Gang of 4\" design patterns, as well as fixing other errors within the software and therefore making it more efficient and properly functional. It also features a simple CI/CD pipeline.",
     tags: [
       {
         name: "Java",
