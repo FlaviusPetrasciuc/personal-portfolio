@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../../constants/styles";
 import { config } from "../../constants/config";
@@ -7,6 +8,21 @@ import gitHub from "../../assets/social-media/github.svg";
 import linkedIn from "../../assets/social-media/linkedin.svg";
 
 const Hero = () => {
+  const [showScrollIndicator, setShowScrollIndicator] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowScrollIndicator(false);
+      } else {
+        setShowScrollIndicator(true);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section className={`relative mx-auto h-screen w-full`}>
       <div
@@ -59,8 +75,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      <div className="xs:bottom-10 absolute bottom-32 flex w-full items-center justify-center">
+      
+      {showScrollIndicator && (
+        <div className="fixed bottom-20 left-0 right-0 flex w-full items-center justify-center z-20">
         <a href="#about">
           <div className="border-secondary flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 p-2">
             <motion.div
@@ -77,6 +94,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
+      )}
     </section>
   );
 };

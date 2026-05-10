@@ -93,7 +93,7 @@ const About = () => {
                 <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
                 <span className="font-medium">Available for Work</span>
               </div>
-              <p className="text-muted-foreground text-sm">I'm currently seeking an internship from September 2026 until January 2027. If you're interested in working together, contact me!</p>
+              <p className="text-muted-foreground text-sm">I'm currently seeking an internship from September 2026 until February 2027. If you're interested in working together, contact me!</p>
             </div>
           </motion.div>
         </div>

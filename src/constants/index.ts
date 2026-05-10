@@ -60,7 +60,7 @@ export const navLinks: TNavLink[] = [
 const services: TService[] = [
   {
     title: "Frontend Development",
-    description: "HTML5, CSS, React, JavaScript",
+    description: "HTML5, CSS3, React, JavaScript",
     icon: code,
   },
   {
