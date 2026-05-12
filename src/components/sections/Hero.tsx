@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../../constants/styles";
 import { config } from "../../constants/config";
 
-import cvFile from "../../assets/cv/CurriculumVitae.pdf";
+import cvFile from "../../assets/cv/CV.pdf";
 import gitHub from "../../assets/social-media/github.svg";
 import linkedIn from "../../assets/social-media/linkedin.svg";
 
