@@ -22,8 +22,10 @@ const Contact = () => {
                 config.contact.info[key as keyof typeof config.contact.info];
               return (
                 <div key={key} className="flex flex-col">
-                  <span className="mb-3 sm:mb-4 font-medium text-white">{span}</span>
-                  <div className="bg-tertiary placeholder:text-secondary rounded-lg border-none px-5 py-3 sm:px-6 sm:py-4 font-medium text-white outline-none break-words whitespace-normal">
+                  <span className="mb-2 sm:mb-4 font-medium text-white text-sm sm:text-base">
+                    {span}
+                  </span>
+                  <div className="bg-tertiary placeholder:text-secondary rounded-lg border-none px-3 py-2 sm:px-6 sm:py-4 font-medium text-white outline-none break-words whitespace-normal text-xs sm:text-sm">
                     {placeholder}
                   </div>
                 </div>

@@ -83,7 +83,7 @@ export const config: TConfig = {
     },
     skills: {
       p: "What do I work with?",
-      h2: "My Skills",
+      h2: "My Skills.",
     },
     feedbacks: {
       p: "What others say",

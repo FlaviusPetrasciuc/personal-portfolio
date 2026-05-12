@@ -166,7 +166,7 @@ const experiences: TExperience[] = [
     iconBg: "#E6DEDD",
     date: "January 2022 - August 2024",
     points: [
-      "Exploring new technologies and learning the basics of web-development (HTML, CSS, JavaScript)",
+      "Exploring new technologies and learning the basics of web-development (HTML, CSS, JavaScript).",
       "Experimenting with Python.",
       "Deep-diving into computer science concepts and researching how computers actually work.",
       "Deciding I would like to pursue a career in IT.",
@@ -197,8 +197,8 @@ const experiences: TExperience[] = [
     points: [
       "Deep-diving into Object Oriented Programming in Java, learning about complex concepts like inheritance, polymorphism, interfaces, and how to design complex software through different kinds of UML diagrams.",
       "Pursuing my first study abroad project in Braga, Portugal through the RUN-EU program in the \"AI for MedTech\" project, learning about the role of AI in medical care and how to 3D-model and print prosthetics.",
-      "Working with different student groups on our first real-world projects with real clients, developing web applications using modern tools such as React, NextJS, TypeScript etc.",
-      "Learning how to redesign poor-quality software by applying design patterns and debugging.",
+      "Working with different student groups on our first real-world projects with real clients, developing web applications using modern tools such as React, NestJS, TypeScript etc.",
+      "Learning how to redesign and improve poor-quality software by applying design patterns and debugging.",
     ],
   },
 ];
