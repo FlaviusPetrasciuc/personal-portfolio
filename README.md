@@ -37,7 +37,7 @@ Explore the live demonstration of the project:
 
 </details><br/>
 
-## Contact Ne
+## Contact Me
 - **Personal Email**: flavius.petrasciuc5@gmail.com
 - **School Email**: flavius.petrasciuc@student.nhlstenden.com
 - **LinkedIn**: [https://www.linkedin.com/in/flavius-sebastian-petrasciuc-1954973b6/](https://www.linkedin.com/in/flavius-sebastian-petrasciuc-1954973b6/)
